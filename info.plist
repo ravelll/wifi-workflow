@@ -23,7 +23,7 @@
 	<key>createdby</key>
 	<string>ravelll</string>
 	<key>description</key>
-	<string>Toggle Wi-Fi setting ON/OFF</string>
+	<string>Set Wi-Fi function ON/OFF</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -57,7 +57,7 @@
 				<key>keyword</key>
 				<string>wifi</string>
 				<key>text</key>
-				<string>Toggle Wi-Fi setting (on/off)</string>
+				<string>Set Wi-Fi function to (on/off)</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
