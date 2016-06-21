@@ -12,7 +12,7 @@ $ open wifi-workflow/Wi-Fi.alfredworkflow
 ```
 
 ### Usage
-You can control Wi-Fi setting by executing a command 'wifi' with a subcommand, like 'on', 'off', or 'reon' (as you can see above picture).
+You can control Wi-Fi setting by executing a command `wifi` with a subcommand, like `on`, `off`, or `restart` (as you can see above picture).
 
 ### License
 [The MIT license.](https://github.com/ravelll/wifi-workflow/blob/master/LICENSE.md)
