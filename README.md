@@ -6,8 +6,13 @@ A Workflow to control Mac's Wi-Fi setting.
 ### Installation
 Clone this repository, and open Wi-Fi.alfredworkflow file on a alfred-able Mac.
 
+```
+$ git clone https://github.com/ravelll/wifi-workflow.git
+$ open wifi-workflow/Wi-Fi.alfredworkflow
+```
+
 ### Usage
-You can control Wi-Fi setting by executing a command 'wifi' with a subcommand, like 'on', 'off', or 'reon'.
+You can control Wi-Fi setting by executing a command 'wifi' with a subcommand, like 'on', 'off', or 'reon' (as you can see above picture).
 
 ### License
-[The MIT license.](https://github.com/ravelll/wiri-workflow/blob/master/LICENSE.md)
+[The MIT license.](https://github.com/ravelll/wifi-workflow/blob/master/LICENSE.md)
