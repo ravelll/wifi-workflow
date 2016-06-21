@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.ravelll.wifi</string>
-	<key>category</key>
-	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</key>
@@ -17,13 +15,15 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
 	<string>ravelll</string>
 	<key>description</key>
-	<string>Set Wi-Fi function ON/OFF</string>
+	<string>Control Wi-Fi setting</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -38,7 +38,16 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>networksetup -setairportpower en0 {query}</string>
+				<string>if [ "{query}" = "restart" ]; then
+  networksetup -setairportpower en0 off
+  networksetup -setairportpower en0 on
+else
+  networksetup -setairportpower en0 {query}
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -47,7 +56,7 @@
 			<key>uid</key>
 			<string>16039760-F173-4AB8-9C73-DA7401D5DE23</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -56,8 +65,10 @@
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>wifi</string>
+				<key>subtext</key>
+				<string>on / off / restart</string>
 				<key>text</key>
-				<string>Set Wi-Fi function to (on/off)</string>
+				<string>Control Wi-Fi setting</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -66,25 +77,30 @@
 			<key>uid</key>
 			<string>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>This workflow enable to Mac’s Wi-Fi setting on or off.
-To Wi-Fi on/off, do ‘wifi on/off’.</string>
+	<string>This workflow give you function to control Wi-Fi setting to on/off/restart.</string>
 	<key>uidata</key>
 	<dict>
 		<key>16039760-F173-4AB8-9C73-DA7401D5DE23</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>60</real>
 		</dict>
 		<key>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</key>
 		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
 			<key>ypos</key>
 			<real>60</real>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>0.0.2</string>
 	<key>webaddress</key>
 	<string>http://ravelll.hatenadiary.jp/</string>
 </dict>
