@@ -42,7 +42,7 @@
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"title":"WiFi On","arg":"on","subtitle":"Turn WiFi On"},{"title":"WiFi Off","arg":"off","subtitle":"Turn WiFi off"},{"title":"WiFi Restart","arg":"restart","subtitle":"Restart WiFi"}]</string>
+				<string>[{"title":"on","arg":"on","subtitle":"Turn WiFi On"},{"title":"off","arg":"off","subtitle":"Turn WiFi off"},{"title":"restart","arg":"restart","subtitle":"Restart WiFi"}]</string>
 				<key>keyword</key>
 				<string>wifi</string>
 				<key>runningsubtext</key>
