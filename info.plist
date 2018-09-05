@@ -4,9 +4,11 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.ravelll.wifi</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</key>
+		<key>247E070E-54F3-46F0-A6C0-39F711158178</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -30,6 +32,35 @@
 	<string>Wi-Fi</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"on","arg":"on","subtitle":"Turn WiFi On"},{"title":"off","arg":"off","subtitle":"Turn WiFi off"},{"title":"restart","arg":"restart","subtitle":"Restart WiFi"}]</string>
+				<key>keyword</key>
+				<string>wifi</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>on / off / restart</string>
+				<key>title</key>
+				<string>Control Wi-Fi setting</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>247E070E-54F3-46F0-A6C0-39F711158178</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -58,27 +89,6 @@ fi</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>wifi</string>
-				<key>subtext</key>
-				<string>on / off / restart</string>
-				<key>text</key>
-				<string>Control Wi-Fi setting</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>This workflow give you function to control Wi-Fi setting to on/off/restart.</string>
@@ -91,16 +101,16 @@ fi</string>
 			<key>ypos</key>
 			<real>60</real>
 		</dict>
-		<key>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</key>
+		<key>247E070E-54F3-46F0-A6C0-39F711158178</key>
 		<dict>
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
-			<real>60</real>
+			<integer>60</integer>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>0.0.2</string>
+	<string>0.0.3</string>
 	<key>webaddress</key>
 	<string>http://ravelll.hatenadiary.jp/</string>
 </dict>
